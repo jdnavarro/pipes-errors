@@ -1,0 +1,18 @@
+name:                eitherP
+version:             0.1
+synopsis:            Lift either monad transformer for pipes
+homepage:            https://github.com/jdnavarro/eitherP
+license:             BSD3
+license-file:        LICENSE
+author:              Danny Navarro
+maintainer:          j@dannynavarro.net
+category:            Control, Monad, Pipes
+build-type:          Simple
+cabal-version:       >=1.10
+
+library
+  exposed-modules:     Pipes.Lift.Either
+  build-depends:       base >=4.6 && <4.8,
+                       either,
+                       pipes
+  default-language:    Haskell2010
