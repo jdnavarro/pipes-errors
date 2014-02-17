@@ -1,6 +1,7 @@
 {-# OPTIONS_GHC -fno-warn-orphans #-}
 module Pipes.Lift.EitherT where
 
+import Control.Monad ((>=>))
 import Pipes (Proxy, MFunctor, hoist, lift)
 import Pipes.Lift (distribute)
 import Pipes.Internal (unsafeHoist)
@@ -13,9 +14,7 @@ instance MFunctor (EitherT e) where
 eitherP :: Monad m
         => Proxy a' a b' b m (Either e r)
         -> Proxy a' a b' b (EitherT e m) r
-eitherP p = do
-    x <- unsafeHoist lift p
-    lift $ EitherT (return x)
+eitherP = unsafeHoist lift >=> lift . EitherT . return
 {-# INLINABLE eitherP #-}
 
 -- | Run 'EitherT' in the base monad
