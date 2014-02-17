@@ -4,7 +4,7 @@ module Pipes.Lift.Either where
 import Pipes (Proxy, MFunctor, hoist, lift)
 import Pipes.Lift (distribute)
 import Pipes.Internal (unsafeHoist)
-import Control.Monad.Trans.Either (EitherT(..), runEitherT)
+import Control.Error (EitherT(..), runEitherT)
 
 instance MFunctor (EitherT e) where
     hoist nat m = EitherT (nat (runEitherT m))
