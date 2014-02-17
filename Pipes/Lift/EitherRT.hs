@@ -1,5 +1,5 @@
 {-# OPTIONS_GHC -fno-warn-orphans #-}
-module Pipes.Lift.EitherR where
+module Pipes.Lift.EitherRT where
 
 import Pipes (Proxy, MFunctor, lift, hoist)
 import Pipes.Lift (distribute)
@@ -12,7 +12,7 @@ import Control.Error
   , flipET
   , flipE
   )
-import Pipes.Lift.Either
+import Pipes.Lift.EitherT
 
 instance MFunctor (EitherRT r) where
     hoist nat m = EitherRT (hoist nat (runEitherRT m))

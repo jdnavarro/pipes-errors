@@ -11,8 +11,8 @@ build-type:          Simple
 cabal-version:       >=1.10
 
 library
-  exposed-modules:     Pipes.Lift.Either
-                       Pipes.Lift.EitherR
+  exposed-modules:     Pipes.Lift.EitherT
+                       Pipes.Lift.EitherRT
   build-depends:       base >=4.6 && <4.8,
                        errors,
                        pipes

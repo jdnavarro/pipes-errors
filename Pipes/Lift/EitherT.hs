@@ -1,5 +1,5 @@
 {-# OPTIONS_GHC -fno-warn-orphans #-}
-module Pipes.Lift.Either where
+module Pipes.Lift.EitherT where
 
 import Pipes (Proxy, MFunctor, hoist, lift)
 import Pipes.Lift (distribute)
