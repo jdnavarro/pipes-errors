@@ -12,9 +12,9 @@ bug-reports:         https://github.com/jdnavarro/pipes-errors/issues
 category:            Control, Monad, Pipes, Error Handling
 synopsis:            Integration between pipes and errors
 description:
-  This package is analogous to the <http://hackage.haskell.org/package/errors
-  `errors`> package but for base monad manipulation in the presence of `Proxy`
-  monad transformers.
+  This package is analogous to the
+  @<http://hackage.haskell.org/package/errors errors>@ package but for
+  base monad manipulation in the presence of `Proxy` monad transformers.
 
   It also provides orphan `MFunctor` instances for `EitherT` and
   `EitherRT`.
