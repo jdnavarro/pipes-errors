@@ -1,8 +1,7 @@
-{-# OPTIONS_GHC -fno-warn-orphans #-}
 module Pipes.Lift.EitherRT where
 
 import Control.Monad ((>=>))
-import Pipes (Proxy, MFunctor, lift, hoist)
+import Pipes (Proxy, lift)
 import Pipes.Lift (distribute)
 import Pipes.Internal (unsafeHoist)
 import Control.Error
@@ -14,9 +13,6 @@ import Control.Error
   , flipE
   )
 import Pipes.Lift.EitherT
-
-instance MFunctor (EitherRT r) where
-    hoist nat m = EitherRT (hoist nat (runEitherRT m))
 
 -- | Turn 'EitherT' in the base monad into 'EitherRT'
 eitherRP :: Monad m
