@@ -16,8 +16,7 @@ description:
   @<http://hackage.haskell.org/package/errors errors>@ package but for
   base monad manipulation in the presence of @Proxy@ monad transformers.
   .
-  It also provides orphan @MFunctor@ instances for @EitherT@ and
-  @EitherRT@.
+  It also provides an orphan @MFunctor@ instance for @ExceptRT@.
 extra-source-files: CHANGELOG.md README.md
 
 source-repository head
