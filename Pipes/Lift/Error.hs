@@ -1,9 +1,9 @@
 module Pipes.Lift.Error
   (
   -- * Re-exports
-    module Pipes.Lift.EitherT
-  , module Pipes.Lift.EitherRT
+    module Pipes.Lift.ExceptT
+  , module Pipes.Lift.ExceptRT
   ) where
 
-import Pipes.Lift.EitherT
-import Pipes.Lift.EitherRT
+import Pipes.Lift.ExceptT
+import Pipes.Lift.ExceptRT

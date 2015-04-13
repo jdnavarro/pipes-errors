@@ -2,10 +2,7 @@
 module Pipes.Lift.Error.Instances where
 
 import Pipes (MFunctor, hoist)
-import Control.Error (EitherT(..), EitherRT(..), runEitherT)
+import Control.Error (ExceptRT(..), runExceptT)
 
-instance MFunctor (EitherT e) where
-    hoist nat m = EitherT (nat (runEitherT m))
-
-instance MFunctor (EitherRT r) where
-    hoist nat m = EitherRT (hoist nat (runEitherRT m))
+instance MFunctor (ExceptRT r) where
+    hoist nat m = ExceptRT (hoist nat (runExceptRT m))
