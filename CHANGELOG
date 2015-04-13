@@ -1,9 +1,0 @@
-0.2
----
-* Add `flipEP`.
-* Move orphan instances to a single module.
-* `Pipes.Lift.Error` re-exports all modules.
-
-0.1
----
-* Initial release.

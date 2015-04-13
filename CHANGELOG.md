@@ -1,0 +1,21 @@
+# Change Log
+All notable changes to this project will be documented in this file. This file
+follows the formatting recommendations from [Keep a
+CHANGELOG](http://keepachangelog.com/).
+
+## [0.2.1][0.2.1] - 2015-4-13
+- Increase upper bounds for `base`.
+- Set upper bounds for `errors-2.0` which is known to fail.
+
+## [0.2][0.2] - 2014-3-11
+### Added
+- Add `flipEP`.
+
+### Changed
+- Move orphan instances to a single module.
+- `Pipes.Lift.Error` re-exports all modules.
+
+## 0.1 - 2014-3-1
+- Initial release.
+
+[0.2]: https://github.com/jdnavarro/pipes-errors/compare/v0.1...v0.2
