@@ -23,6 +23,6 @@ CHANGELOG](http://keepachangelog.com/).
 ## 0.1 - 2014-3-1
 - Initial release.
 
-[0.3]: https://github.com/jdnavarro/pipes-errors/compare/v0.3...HEAD
+[0.3]: https://github.com/jdnavarro/pipes-errors/compare/v0.2.1...v0.3
 [0.2.1]: https://github.com/jdnavarro/pipes-errors/compare/v0.2...v0.2.1
 [0.2]: https://github.com/jdnavarro/pipes-errors/compare/v0.1...v0.2
