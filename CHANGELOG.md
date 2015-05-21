@@ -3,9 +3,9 @@ All notable changes to this project will be documented in this file. This file
 follows the formatting recommendations from [Keep a
 CHANGELOG](http://keepachangelog.com/).
 
-## [Unreleased][unreleased]
+## [0.3][0.3] - 2015-5-21
 ### Changed
-- Upgrade errors dependency to 2.0.
+- Upgrade errors dependency to 2.0.0.
 
 ## [0.2.1][0.2.1] - 2015-4-13
 ### Changed
@@ -23,6 +23,6 @@ CHANGELOG](http://keepachangelog.com/).
 ## 0.1 - 2014-3-1
 - Initial release.
 
-[unreleased]: https://github.com/jdnavarro/pipes-errors/compare/v0.2.1...HEAD
+[0.3]: https://github.com/jdnavarro/pipes-errors/compare/v0.3...HEAD
 [0.2.1]: https://github.com/jdnavarro/pipes-errors/compare/v0.2...v0.2.1
 [0.2]: https://github.com/jdnavarro/pipes-errors/compare/v0.1...v0.2
